@@ -4,3 +4,23 @@ server:
 spring:
   application:
     name: placement-backend
+  profiles:
+    default: dev
+
+placement:
+  email:
+    allowed-domain: "college.edu.in"
+  policy:
+    offer-response-window-hours: 72
+    dream-ctc-threshold-lpa: 10.0
+    block-regular-after-regular-offer: true
+    dream-allowed-after-regular: true
+  jwt:
+    access-token-minutes: 15
+    refresh-token-days: 7
+    secret: ${JWT_SECRET:placement-dev-insecure-secret-key-min-256-bits-long-tech-talk}
+  storage:
+    enabled: true
+    base-dir: ${STORAGE_BASE_DIR:./target/storage-demo}
+    max-resume-size-bytes: 2097152
+

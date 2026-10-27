@@ -20,3 +20,4 @@ public class PingController {
         return Map.of("status", "ok");
     }
 }
+

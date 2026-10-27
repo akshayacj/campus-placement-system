@@ -22,3 +22,4 @@ class PingControllerTest {
                 .andExpect(jsonPath("$.status").value("ok"));
     }
 }
+

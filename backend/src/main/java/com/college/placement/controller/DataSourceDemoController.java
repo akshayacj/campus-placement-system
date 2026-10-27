@@ -46,3 +46,4 @@ public class DataSourceDemoController {
         return url.replaceAll("(?i)(password=)[^&]*", "$1*****");
     }
 }
+

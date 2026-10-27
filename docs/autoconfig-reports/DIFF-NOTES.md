@@ -34,3 +34,4 @@ In `demo-2-jpa`, the starters introduced Hibernate ORM, HikariCP, Spring Data JP
 1. **Starters are transitive dependency aggregates**: Adding `spring-boot-starter-data-jpa` doesn't just include a single library—it brings in HikariCP, Hibernate Core, Spring Data JPA, and Spring ORM.
 2. **Conditional auto-configuration brings them to life**: The code in Spring Boot already contains recipes for configuring databases, ORM, and migrations, but they remain inactive (`Negative matches`) until the classes appear on the classpath (`@ConditionalOnClass`) and required beans are absent (`@ConditionalOnMissingBean`).
 3. **No manual boilerplate**: The developer did not write a single `@Bean` for `DataSource`, `EntityManagerFactory`, `TransactionManager`, or `Flyway`; Spring Boot auto-configured all of them automatically.
+
